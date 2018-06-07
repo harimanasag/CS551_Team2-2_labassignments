@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.jayantis.lab3.LoginActivity">
+    tools:context="ase.com.lab3.LoginActivity"
+    android:background="@drawable/loginscreenbackground">
 
 
     <TextView
@@ -15,9 +16,9 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="44dp"
         android:gravity="center"
-        android:text="Login Screen"
+        android:text="Welcome to Login Screen !!"
         android:textAppearance="@style/TextAppearance.AppCompat"
-        android:textColor="@color/colorPrimary"
+        android:textColor="@color/colorAccent"
         android:textSize="20sp"
         android:textStyle="bold|italic" />
 
@@ -29,6 +30,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="54dp"
         android:background="@android:color/background_light"
+        android:drawableLeft="@drawable/user_email"
         android:ems="10"
         android:hint="Email Address"
         android:inputType="textPersonName" />
@@ -43,20 +45,21 @@
         android:background="@android:color/background_light"
         android:ems="10"
         android:hint="Password"
-        android:inputType="textPassword"/>
+        android:inputType="textPassword"
+        android:drawableLeft="@drawable/user_password"/>
 
     <Button
         android:id="@+id/login"
-        style="@android:style/Widget.Material.Button.Toggle"
+        style="@android:style/Widget.Material.Button.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/loginpassword"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="28dp"
-        android:onClick="login"
         android:text="Login"
         android:textColor="@android:color/background_dark"
-        android:textSize="14sp" />
+        android:textSize="14sp"
+        android:onClick="login"/>
 
     <TextView
         android:id="@+id/registrationtext"
@@ -68,7 +71,7 @@
         android:layout_marginTop="70dp"
         android:gravity="center"
         android:text="Haven't Registered Yet ?"
-        android:textColor="@android:color/holo_blue_dark"
+        android:textColor="?attr/colorBackgroundFloating"
         android:textSize="16sp"
         android:textStyle="bold" />
 
@@ -80,8 +83,8 @@
         android:layout_alignBaseline="@+id/registrationtext"
         android:layout_alignBottom="@+id/registrationtext"
         android:layout_alignEnd="@+id/loginpassword"
-        android:onClick="register"
         android:text="Register"
+        android:onClick="register"
         android:textColor="@android:color/holo_orange_dark"
         android:textSize="15sp"
         android:textStyle="bold" />

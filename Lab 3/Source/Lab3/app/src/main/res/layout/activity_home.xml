@@ -4,10 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.jayantis.lab3.HomeActivity">
+    tools:context="ase.com.lab3.HomeActivity"
+    android:background="@drawable/homeactivitybg">
 
     <Button
         android:id="@+id/logout"
+        style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
@@ -35,23 +37,24 @@
         android:layout_below="@+id/homeActivityGreeting"
         android:layout_marginTop="31dp"
         android:gravity="center"
-        android:text="Take a picture by clicking on below button (Take a picture button). And get the information regarding the picture"
+        android:text="So, now for this you have to take a picture by clicking below button and using that captured image we will use Watson Visual Recognition API to get you some interesting Info"
         android:textColor="@android:color/holo_purple"
         android:textSize="16sp"
         android:textStyle="bold|italic" />
 
     <Button
         android:id="@+id/takepicture"
+        style="@android:style/Widget.Holo.Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="25dp"
-        android:onClick="takePicture"
         android:text="Take a Picture"
-        android:textColor="@android:color/holo_blue_dark"
+        android:textColor="@android:color/holo_green_light"
+        android:textStyle="bold"
         android:textSize="18sp"
-        android:textStyle="bold" />
+        android:onClick="takePicture"/>
 
     <TextView
         android:id="@+id/visualoutput"
@@ -59,7 +62,8 @@
         android:layout_height="wrap_content"
         android:layout_alignEnd="@+id/visualrecognitiontext"
         android:layout_below="@+id/visualrecognitiontext"
-        android:layout_marginTop="11dp" />
+        android:layout_marginTop="11dp"
+        android:background="@drawable/inputborder" />
 
     <ImageView
         android:id="@+id/imagepreview"

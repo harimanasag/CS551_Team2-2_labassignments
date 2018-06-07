@@ -3,8 +3,8 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 26
     defaultConfig {
-        applicationId "com.example.jayantis.lab3"
-        minSdkVersion 19
+        applicationId "ase.com.lab3"
+        minSdkVersion 26
         targetSdkVersion 26
         versionCode 1
         versionName "1.0"
@@ -35,3 +35,4 @@ dependencies {
 }
 
 
+apply plugin: 'com.google.gms.google-services'
